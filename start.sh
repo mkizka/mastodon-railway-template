@@ -7,5 +7,5 @@ RAILS_ENV=production bin/tootctl accounts create \
   "$OWNER_USERNAME" \
   --email "$OWNER_EMAIL" \
   --confirmed \
-  --role Owner
+  --role Owner || true
 npx concurrently "bundle exec puma -C config/puma.rb" "bundle exec sidekiq"
