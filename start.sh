@@ -5,7 +5,7 @@ bundle exec rake db:migrate
 # https://docs.joinmastodon.org/admin/setup/#admin-cli
 RAILS_ENV=production bin/tootctl accounts create \
   "$OWNER_USERNAME" \
-  --email "$OWNER_USERNAME@example.com" \
+  --email "$OWNER_EMAIL" \
   --confirmed \
   --role Owner
 npm i -g concurrently
