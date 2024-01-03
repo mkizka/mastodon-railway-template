@@ -43,6 +43,5 @@ That's it!
 ![](images/step4-2.png)
 
 ## ⚠️⚠️Caution⚠️⚠️
-- Mailhog is used for simplicity, but it is recommended to use a mail service for increased security, especially when used by multiple people.
 - Uploaded images are saved on a mounted volume with a capacity of 5GB. It is advisable to set up S3 or similar from the start if needed.
 - Railway charges based on usage, so please avoid increasing follows excessively. [You can also set usage limits in the settings.](https://docs.railway.app/reference/usage-limits)
