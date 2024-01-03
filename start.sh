@@ -1,0 +1,12 @@
+#!/usr/bin/bash
+set -eu
+
+bundle exec rake db:migrate
+# https://docs.joinmastodon.org/admin/setup/#admin-cli
+RAILS_ENV=production bin/tootctl accounts create \
+  "$OWNER_USERNAME" \
+  --email "$OWNER_USERNAME@example.com" \
+  --confirmed \
+  --role Owner
+npm i -g concurrently
+concurrently "bundle exec puma -C config/puma.rb" "bundle exec sidekiq"
