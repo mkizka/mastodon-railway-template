@@ -1,3 +1,5 @@
+[English](./README.md) | [日本語](./README_ja.md)
+
 # mastodon-railway-template
 [Railway](https://railway.app)でMastodonをデプロイするためのテンプレートです。
 
