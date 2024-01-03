@@ -57,7 +57,7 @@
 
 ![](images/signup3.png)
 
-アカウント認証が出来たら、他の人がアカウントを作成できないようにシングルユーザーモードを有効にします。「Mastodon」->「Variables」からSINGLE_USER_MODE、trueを入力して「Add」をクリックします。
+アカウント認証が出来たら、他の人がアカウントを作成できないようにシングルユーザーモードを有効にします。「Mastodon」->「Variables」->「New Variable」からSINGLE_USER_MODE、trueを入力して「Add」をクリックします。
 
 ![](images/signup4.png)
 

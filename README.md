@@ -57,7 +57,7 @@ After registering, check Mailhog for an email. Authenticate your account through
 
 ![](images/signup3.png)
 
-Once your account is authenticated, enable Single User Mode to prevent others from creating accounts. Go to "Mastodon" -> "Variables," enter SINGLE_USER_MODE, true, and click "Add."
+Once your account is authenticated, enable Single User Mode to prevent others from creating accounts. Go to "Mastodon" -> "Variables" -> "New Variable", enter SINGLE_USER_MODE, true, and click "Add."
 
 ![](images/signup4.png)
 
