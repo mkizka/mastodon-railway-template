@@ -7,7 +7,7 @@ A template for deploying Mastodon on [Railway](https://railway.app).
 
 ### 1. Click on "Deploy on Railway"
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/Vo3Gs5?referralCode=mveF9L)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/Pa4Fcc?referralCode=mveF9L)
 
 ### 2. Click "Configure" for each service and set the environment variables
 ![](images/step2.png)
@@ -17,14 +17,12 @@ You must click "Save Config" for all settings. Below are the instructions for co
 #### Mastodon-Streaming
 No need to edit as it syncs with Mastodon's environment variables.
 
-#### Mailhog
-No editing required.
-
 #### Mastodon
 | Variable Name | Description | Default |
 | --- | --- | --- |
-| LOCAL_DOMAIN | Set the domain used for Mastodon. Specify either a custom domain or a free domain available from Railway, like `{any string}.up.railway.app`. | Automatically generated domain |
-| SMTP_SERVER<br>SMTP_LOGIN<br>SMTP_PASSWORD<br>SMTP_FROM_ADDRESS | Set these if you want to use a mail server. Mandatory for open servers. For personal use, you can use a tool named Mailhog instead. | Mailhog server |
+| OWNER_USERNAME | Specify the username for the admin account to be created at startup. | |
+| OWNER_EMAIL | Specify the email address for the admin account to be created at startup. It won't be used until the mail server is set up. | |
+| LOCAL_DOMAIN | Set the domain to be used in Mastodon. Specify either a custom domain or a free domain available from Railway `{any string}.up.railway.app`. | Automatically generated domain |
 
 No other settings need to be edited.
 
@@ -43,27 +41,6 @@ The URL can be found under "Deployments" as shown below.
 That's it!
 
 ![](images/step4-2.png)
-
-## Account Creation with Mailhog (Single User Mode)
-First, open Mailhog. Find the URL under "Deployments."
-
-![](images/signup1.png)
-
-Then, create an account on Mastodon. Use an email address in the format `{any name}@{Mailhog's domain}`.
-
-![](images/signup2.png)
-
-After registering, check Mailhog for an email. Authenticate your account through this email.
-
-![](images/signup3.png)
-
-Once your account is authenticated, enable Single User Mode to prevent others from creating accounts. Go to "Mastodon" -> "Variables" -> "New Variable", enter SINGLE_USER_MODE, true, and click "Add."
-
-![](images/signup4.png)
-
-Finally, to prevent others from using Mailhog, make it private by removing the "Public Networking" domain under "Mailhog" -> "Settings" -> "Networking." Hover over the domain to see the trash can icon.
-
-![](images/signup5.png)
 
 ## ⚠️⚠️Caution⚠️⚠️
 - Mailhog is used for simplicity, but it is recommended to use a mail service for increased security, especially when used by multiple people.
