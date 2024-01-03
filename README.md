@@ -42,6 +42,15 @@ That's it!
 
 ![](images/step4-2.png)
 
+### 5. Sign in to the Owner Account
+You can search for the service's execution logs in "Observability" at the top of the project screen.
+
+By searching for "New Password", you can find the password for the Owner account created at the start of Mastodon.
+
+![](images/signin.png)
+
+You can use this password and email address to log in to the admin account from the login screen.
+
 ## ⚠️⚠️Caution⚠️⚠️
 - Uploaded images are saved on a mounted volume with a capacity of 5GB. It is advisable to set up S3 or similar from the start if needed.
 - Railway charges based on usage, so please avoid increasing follows excessively. [You can also set usage limits in the settings.](https://docs.railway.app/reference/usage-limits)
