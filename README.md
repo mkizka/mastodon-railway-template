@@ -38,6 +38,10 @@
 
 ![](images/step4.png)
 
+以上で完了です！
+
+![](images/step4-2.png)
+
 ## Mailhogを使ったアカウント作成(シングルユーザーモード)
 まず、Mailhogを開きます。「Deployments」からURLを見つけてください。
 
