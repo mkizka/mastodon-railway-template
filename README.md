@@ -52,7 +52,7 @@ That's it!
 
 ![](images/step5-2.png)
 
-### 5. Sign in to the Owner Account
+### 6. Sign in to the Owner Account
 You can search for the service's execution logs in "Observability" at the top of the project screen.
 
 By searching for "New Password", you can find the password for the Owner account created at the start of Mastodon.
