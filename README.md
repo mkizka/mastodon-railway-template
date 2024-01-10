@@ -61,6 +61,16 @@ By searching for "New Password", you can find the password for the Owner account
 
 You can use this password and email address to log in to the admin account from the login screen.
 
+## Troubleshooting
+![](images/trouble.png)
+
+You may encounter a message like this.
+
+- Try waiting a bit and then reload
+- Redeploy
+
+These actions can sometimes resolve the issue.
+
 ## ⚠️⚠️Caution⚠️⚠️
 - After starting to use Mastodon, please do not change the domain.
 - Uploaded images are saved on a mounted volume with a capacity of 5GB. It is advisable to set up S3 or similar from the start if needed.
