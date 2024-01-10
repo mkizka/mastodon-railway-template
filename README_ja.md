@@ -3,6 +3,8 @@
 # mastodon-railway-template
 [Railway](https://railway.app)でMastodonをデプロイするためのテンプレートです。
 
+![](./images/deploy.gif)
+
 ## 使用方法
 
 ### 1. Deploy on Railwayをクリック

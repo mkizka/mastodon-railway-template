@@ -3,6 +3,8 @@
 # mastodon-railway-template
 A template for deploying Mastodon on [Railway](https://railway.app).
 
+![](./images/deploy.gif)
+
 ## Usage
 
 ### 1. Click on "Deploy on Railway"
