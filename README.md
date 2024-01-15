@@ -3,6 +3,8 @@
 # mastodon-railway-template
 A template for deploying Mastodon on [Railway](https://railway.app).
 
+**Note: This template only works with the Hobby plan or higher.**
+
 ![](./images/deploy.gif)
 
 ## Usage
