@@ -8,7 +8,7 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["^deploy.yml$"],
+      "fileMatch": ["deploy.yml$"],
       "matchStrings": ["MASTODON_VERSION: (?<currentValue>.*?)\\n"],
       "depNameTemplate": "tootsuite/mastodon",
       "datasourceTemplate": "docker"
