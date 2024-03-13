@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+  mastodon:
+    build:
+      context: .
+      args:
+        - MASTODON_VERSION=v4.2.3
+    env_file: .env.production
+    ports:
+      - 3000:3000
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
+  db:
+    image: postgres:16-alpine
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=password
+    healthcheck:
+      test: ["CMD", "pg_isready"]
+      interval: 2s
+      timeout: 2s
+      retries: 10
+  redis:
+    image: redis:7-alpine
