@@ -1,0 +1,12 @@
+name: Test
+
+on:
+  pull_request:
+
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker compose up -d
+      - run: npx wait-on http://localhost:3000/health -t 30s
