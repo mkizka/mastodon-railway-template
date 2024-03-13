@@ -12,6 +12,13 @@
       "matchStrings": ["MASTODON_VERSION: (?<currentValue>.*?)\\n"],
       "depNameTemplate": "tootsuite/mastodon",
       "datasourceTemplate": "docker"
+    },
+    {
+      "customType": "regex",
+      "fileMatch": ["^compose.yaml$"],
+      "matchStrings": ["MASTODON_VERSION=(?<currentValue>.*?)\\n"],
+      "depNameTemplate": "tootsuite/mastodon",
+      "datasourceTemplate": "docker"
     }
   ]
 }

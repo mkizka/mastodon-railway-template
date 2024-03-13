@@ -7,12 +7,6 @@ services:
       args:
         - MASTODON_VERSION=v4.2.3
     env_file: .env.production
-    healthcheck:
-      # prettier-ignore
-      test: ["CMD-SHELL", "wget -q --spider --proxy=off localhost:3000/health || exit 1"]
-      interval: 2s
-      timeout: 2s
-      retries: 30
     ports:
       - 3000:3000
     depends_on:
