@@ -13,7 +13,7 @@ jobs:
     env:
       REGISTRY: ghcr.io
       IMAGE_NAME: mkizka/mastodon-railway
-      MISSKEY_VERSION: v4.2.3
+      MASTODON_VERSION: v4.2.3
     steps:
       - uses: actions/checkout@v4
       - uses: docker/login-action@v3
@@ -27,12 +27,12 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
-            type=raw,value=${{ env.MISSKEY_VERSION }}
+            type=raw,value=${{ env.MASTODON_VERSION }}
             type=raw,value=latest
       - uses: docker/build-push-action@v5
         with:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
-          build-args: MASTODON_VERSION=${{ env.MISSKEY_VERSION }}
+          build-args: MASTODON_VERSION=${{ env.MASTODON_VERSION }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
