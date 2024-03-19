@@ -11,6 +11,6 @@ bin/tootctl accounts create \
   --confirmed \
   --role Owner || true
 # https://github.com/mastodon/mastodon/releases/tag/v4.2.8
-bin/tootctl accounts modify --approve
+bin/tootctl accounts modify "$OWNER_USERNAME" --approve
 
 npx concurrently "bundle exec puma -C config/puma.rb" "bundle exec sidekiq"
