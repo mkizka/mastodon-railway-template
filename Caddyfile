@@ -1,0 +1,4 @@
+mastodon.localhost {
+    tls /certs/mastodon.localhost.pem /certs/mastodon.localhost-key.pem
+    reverse_proxy mastodon:3000
+}
