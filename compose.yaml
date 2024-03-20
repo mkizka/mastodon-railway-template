@@ -7,13 +7,19 @@ services:
       args:
         - MASTODON_VERSION=v4.2.8
     env_file: .env.production
-    ports:
-      - 3000:3000
     depends_on:
       db:
         condition: service_healthy
       redis:
         condition: service_started
+  caddy:
+    image: caddy:2-alpine
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - ./certs:/certs
   db:
     image: postgres:16-alpine
     ports:
