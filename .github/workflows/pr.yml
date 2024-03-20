@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: docker compose up -d
-      - run: npx wait-on http://localhost:3000/health -t 30s -v
-      - run: npx wait-on http://localhost:3000 -t 30s -v
+      - run: npx wait-on https://mastodon.localhost/health -t 30s -v
+      - run: npx wait-on https://mastodon.localhost -t 30s -v
       - run: docker compose logs mastodon --tail=100
         if: failure()
