@@ -13,7 +13,7 @@ jobs:
     env:
       REGISTRY: ghcr.io
       IMAGE_NAME: mkizka/mastodon-railway
-      MASTODON_VERSION: v4.2.8
+      MASTODON_VERSION: v4.2.9
     steps:
       - uses: actions/checkout@v4
       - uses: docker/login-action@v3
