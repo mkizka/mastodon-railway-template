@@ -5,7 +5,7 @@ services:
     build:
       context: .
       args:
-        - MASTODON_VERSION=v4.2.13
+        - MASTODON_VERSION=v4.3.1
     env_file: .env.production
     depends_on:
       db:
