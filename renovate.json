@@ -20,5 +20,6 @@
       "depNameTemplate": "tootsuite/mastodon",
       "datasourceTemplate": "docker"
     }
-  ]
+  ],
+  "enabled": false
 }
