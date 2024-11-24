@@ -1,3 +1,6 @@
+> [!CAUTION]
+> **This template is deprecated. The image version will not be updated beyond 4.2.13**
+
 [English](./README.md) | [日本語](./README_ja.md)
 
 # mastodon-railway-template
